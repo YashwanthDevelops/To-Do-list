@@ -47,7 +47,7 @@ cancelBtn.onclick = function() {
 
 const input = document.getElementById("ModTodo")
 function ModalAddTodo(){
-    if(input == ""){
+    if(input.value == ''){
         alert("Enter Todo!")
     }else{
         const li = document.createElement("li");
@@ -56,6 +56,7 @@ function ModalAddTodo(){
         let span = document.createElement("span")
         span.innerHTML = "\u00d7"
         li.appendChild(span);
+        input.value = '';
         modal.style.display = "none";
     }
 }
