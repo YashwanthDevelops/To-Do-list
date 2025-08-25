@@ -20,5 +20,3 @@ _(Replace with an actual screenshot of your app)_
 - **HTML5** – Structure of the app
 - **CSS3** – Styling and layout
 - **JavaScript** – Dynamic task handling and interactivity
-
-## 📂 Folder Structure

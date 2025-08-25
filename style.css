@@ -97,3 +97,51 @@ ul li span{
 ul li span:hover{
     background-color: #edeef0;
 }
+.modal{
+    display: none;
+    position: fixed;
+    left:0;
+    top :0;
+    width:100%;
+    height:100%;
+    background-color: #ececec;
+}
+.ModalContent{
+    background-color: #fff;
+    width:40%;
+    max-width: 600px;
+    margin:10% auto;
+    padding:20px;
+    border-radius: 10px;
+    text-align:center;
+    height:40%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ModalAddTodo{
+    display: flex;
+    gap : 10px;
+    height : 40px;
+    padding:20px;
+}
+#ModTodo{
+    flex:1;  
+    border-radius: 8px;
+}
+.ModalSave{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:0 20px 0;
+}
+.ModalSave button{
+    height:40px;
+    width:150px;
+    border-radius: 10px;
+}
+.ModalAddBtn{
+    border-radius:8px;
+}

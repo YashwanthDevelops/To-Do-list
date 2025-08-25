@@ -16,11 +16,27 @@
             <img src = "Assets/Light-theme.png" alt = "Theme icon"/>
         </button>
     </div>
-    <button id = "addTodobtn" class = "fab">+</button>
+    <button onclick ="openModal()" id = "addTodobtn" class = "fab">+</button>
     <ul id = "listcontainer">
         <!-- <li class = "checked">Task 1</li>
         <li>Task 2</li>
         <li>Task 3</li> -->
     </ul>
+    <div id = "MyNodal" class = "modal">
+        <div class = "ModalContent">
+            <h1 class = "ModalTitle">New Todo</h1>
+            <div class = "ModalAddTodo" >
+                <input type = "text" id = "ModTodo" placeholder = "Input your Todo">
+            </div>
+            <div class = "ModalSave">
+                <div>
+                    <button id = "CancelModal">Cancel</button>
+                </div>
+                <div>
+                    <button onclick = "ModalAddTodo()">Add Todo</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src = "script.js"></script>
 </body>

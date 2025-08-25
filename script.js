@@ -33,3 +33,29 @@ function showdata(){
     listcontainer.innerHTML = localStorage.getItem("data")
 }
 showdata();
+
+const modal = document.getElementById("MyNodal")
+const openBtn = document.getElementById("addTodobtn")
+const cancelBtn = document.getElementById("CancelModal")
+
+openBtn.onclick = function() {
+    modal.style.display = "flex";
+}
+cancelBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+const input = document.getElementById("ModTodo")
+function ModalAddTodo(){
+    if(input == ""){
+        alert("Enter Todo!")
+    }else{
+        const li = document.createElement("li");
+        li.innerHTML = input.value;
+        container.appendChild(li);
+        let span = document.createElement("span")
+        span.innerHTML = "\u00d7"
+        li.appendChild(span);
+        modal.style.display = "none";
+    }
+}
